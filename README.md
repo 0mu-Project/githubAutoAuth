@@ -7,6 +7,11 @@
 ## 用途
 CGI間接，或是其他沒有console但是想透過帳號密碼認證GitHub並Push Commit的場合。
 
+## 使用方式
+`./autoAuth.sh <github帳號> <github密碼> <repositorie路徑>`
+
+執行後，會自動把帳號密碼暫時性的寫入repositorie並push，再刪除帳號密碼資訊。
+
 ## 流程
 
 1. 先檢查原本的網址中有沒有認證資訊（`username:password@`），如果有先刪掉
